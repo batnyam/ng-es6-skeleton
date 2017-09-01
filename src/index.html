@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>NG ES6 Skeleton</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+</head>
+
+<body ng-app="ngEs6App">
+  <header></header>
+  <nav></nav>
+  <main>
+    <ui-view>
+      <!-- move loader into component -->
+      <div class="loader" ng-hide="loaded"></div>
+    </ui-view>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
