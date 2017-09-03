@@ -1,5 +1,6 @@
 import angular from 'angular';
 
-import FirstModule from './first';
+import HomeModule from './home';
+import AboutModule from './about';
 
-export default angular.module('app.modules', [FirstModule.name]);
+export default angular.module('app.modules', [HomeModule.name, AboutModule.name]);

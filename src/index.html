@@ -9,15 +9,12 @@
 </head>
 
 <body ng-app="ngEs6App">
-  <header></header>
-  <nav></nav>
-  <main>
+  <app-header brand="NG ES6 Skeleton"></app-header>
+  <div class="container">
     <ui-view>
-      <!-- move loader into component -->
       <div class="loader" ng-hide="loaded"></div>
     </ui-view>
-  </main>
-  <footer></footer>
+  </div>
 </body>
 
 </html>

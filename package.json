@@ -5,7 +5,9 @@
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.6",
-    "angular": "^1.6.6"
+    "angular": "^1.6.6",
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1"
   },
   "description": "A complete, yet simple, Angular 1.X skeleton using eslint, es6+, and webpack.",
   "devDependencies": {
@@ -24,8 +26,10 @@
     "eslint-loader": "^1.9.0",
     "eslint-plugin-angular": "^3.1.1",
     "eslint-plugin-import": "^2.7.0",
+    "exports-loader": "^0.6.4",
     "html-webpack-plugin": "^2.30.1",
     "ng-annotate-loader": "^0.6.1",
+    "popper.js": "^1.12.5",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.6",
@@ -46,7 +50,7 @@
     "build": "cross-env NODE_ENV=prod && webpack -p",
     "clean": "cross-env npm cache clean -f && rimraf -- node_modules dist",
     "lint": "cross-env eslint src/",
-    "start": "cross-env webpack-dev-server --inline --hot --port 3000 --content-base dist/",
+    "start": "cross-env webpack-dev-server --inline --port 3000 --content-base dist/",
     "start:prod": "cross-env node server.js --content-base dist/"
   },
   "version": "1.0.0"

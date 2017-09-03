@@ -1,3 +1,6 @@
 import angular from 'angular';
 
-export default angular.module('app.common', []);
+import commonServices from './services';
+import commonComponents from './components';
+
+export default angular.module('app.common', [commonServices.name, commonComponents.name]);
