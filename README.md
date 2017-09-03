@@ -1,5 +1,5 @@
 # Angular 1.X ES6 Skeleton
-This repo provides a basic Angular 1.X skeleton, using the ES6+ syntax and Webpack for bundling and development tools.
+This repo provides a basic Angular 1.X skeleton, using Bootstrap 4 for styling, ESlint for JavaScript linting, the ES6+ syntax and Webpack for bundling and development tools.
 
 ##### The Application Structure
 
