@@ -39,7 +39,7 @@
     "url": "git+https://github.com/zainxyz/ng-es6-skeleton.git"
   },
   "scripts": {
-    "build": "cross-env export NODE_ENV=prod && webpack -p",
+    "build": "cross-env NODE_ENV=prod && webpack -p",
     "clean": "cross-env npm cache clean -f && rimraf -- node_modules dist",
     "lint": "cross-env eslint src/",
     "start": "cross-env webpack-dev-server --no-inline --port 3000 --content-base dist/",
