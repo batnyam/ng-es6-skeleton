@@ -3,6 +3,10 @@
   "bugs": {
     "url": "https://github.com/zainxyz/ng-es6-skeleton/issues"
   },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.6",
+    "angular": "^1.6.6"
+  },
   "description": "A complete, yet simple, Angular 1.X skeleton using eslint, es6+, and webpack.",
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -42,13 +46,8 @@
     "build": "cross-env NODE_ENV=prod && webpack -p",
     "clean": "cross-env npm cache clean -f && rimraf -- node_modules dist",
     "lint": "cross-env eslint src/",
-    "start": "cross-env webpack-dev-server --no-inline --port 3000 --content-base dist/",
-    "start:prod": "cross-env node server.js --content-base dist/",
-    "test": "cross-env echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env webpack-dev-server --inline --hot --port 3000 --content-base dist/",
+    "start:prod": "cross-env node server.js --content-base dist/"
   },
-  "version": "1.0.0",
-  "dependencies": {
-    "@uirouter/angularjs": "^1.0.6",
-    "angular": "^1.6.6"
-  }
+  "version": "1.0.0"
 }
